@@ -1,0 +1,60 @@
+/* Fonts & Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; color: #3e3a36; line-height: 1.6; }
+
+/* Container */
+.container { width: 90%; max-width: 1100px; margin: 0 auto; padding: 50px 0; }
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+  text-align: center;
+  padding: 160px 20px;
+  color: #f1f0e8;
+}
+.hero .overlay {
+  position: absolute;
+  top:0; left:0; width:100%; height:100%;
+  background: rgba(62,58,54,0.5);
+}
+.hero .container { position: relative; z-index: 2; }
+.hero h1 { font-family: 'Raleway', sans-serif; font-size: 3.5rem; margin-bottom: 20px; }
+.hero p { font-size: 1.3rem; margin-bottom: 30px; }
+.hero .btn {
+  background: linear-gradient(135deg, #6b8e23, #556b2f);
+  padding: 16px 35px;
+  border-radius: 8px;
+  color: white; font-weight: 600; text-decoration: none;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.hero .btn:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+
+/* Features Section */
+.features { background-color: #f4f1e8; text-align: center; }
+.features h2 { margin-bottom: 40px; font-size: 2.5rem; }
+.cards { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; }
+.card {
+  background: #fff; border-radius: 12px; padding: 30px 20px;
+  width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover { transform: translateY(-8px); box-shadow: 0 12px 24px rgba(0,0,0,0.2); }
+.card h3 { color: #8b5e3c; margin-bottom: 15px; }
+
+/* Contact Form */
+.contact { background-color: #e0ddd4; text-align: center; }
+.contact form { display: flex; flex-direction: column; align-items: center; gap: 15px; }
+.contact input, .contact textarea {
+  width: 100%; max-width: 450px; padding: 12px; border-radius: 6px; border: 1px solid #ccc;
+}
+.contact button {
+  background-color: #6b8e23; color: #fff; padding: 14px 30px;
+  border-radius: 6px; border: none; font-weight: 600;
+  cursor: pointer; transition: background 0.25s ease;
+}
+.contact button:hover { background-color: #556b2f; }
+
+/* Footer */
+footer { text-align: center; padding: 25px 0; background: #3e3a36; color: #f1f0e8; }
